@@ -2,6 +2,11 @@
 
 ## Features
 
+- elements created dynamically
+- rate by clicking on selected star
+- mouse over and out events
+- star hover animation
+
 ## Technologies used
 
 - HTML

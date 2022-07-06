@@ -1,0 +1,61 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-family: serif;
+  font-size: 16px;
+}
+
+body {
+  width: 90%;
+  margin: 1.25rem auto;
+  line-height: 1.3;
+  height: 100vh;
+}
+
+section {
+  margin-top: 1.2rem;
+  position: relative;
+}
+
+section::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-top: 1px dotted #ddd;
+  content: "";
+  display: block;
+  width: 35%;
+  height: 1px;
+}
+
+.stars-rating {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  gap: 5px;
+}
+
+.stars-rating .star {
+  font-size: 2rem;
+  color: #ddd;
+  cursor: pointer;
+  transition: color 250ms ease-in-out, transform 250ms ease-in-out;
+}
+
+.stars-rating .star:hover {
+  transform: rotate(0.25turn);
+}
+
+.stars-rating .star.selected {
+  color: #ffff00;
+}
+
+.stars-rating .star.rated {
+  color: #ffa500;
+}
