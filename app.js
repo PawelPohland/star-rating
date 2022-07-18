@@ -1,3 +1,5 @@
+"use strict";
+
 const STAR_CHARACTER = "&#9733;"; // utf-8 star character
 
 // event handler for click, mouse over and out events
